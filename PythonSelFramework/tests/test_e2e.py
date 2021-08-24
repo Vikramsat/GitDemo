@@ -13,6 +13,9 @@ from pageObjects.HomePage import HomePage
 class TestOne(Baseclass):
     def branchchanges(self):
         print("branch changes in test_e2e")
+
+    def changefromUSteam(self):
+        print("This is changed by US team")
         
     def test_e2e(self):
 
