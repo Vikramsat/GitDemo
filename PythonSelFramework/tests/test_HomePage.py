@@ -31,6 +31,10 @@ class TestHomePage(Baseclass):
         assert "Success" in homepage.getSuccessText().text
 
         self.driver.refresh()
+
+    def changesforBranch(self):
+        print("Changes made in branch")
+
     @pytest.fixture(params=HomePageData.testData("Testcase2"))
     def getData(self, request):
         return request.param

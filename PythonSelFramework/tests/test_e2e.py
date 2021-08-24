@@ -11,6 +11,9 @@ from pageObjects.HomePage import HomePage
 
 #@pytest.mark.usefixtures("setup")      #placed this fixture in BaseClass.py to make the code more optimized, and inheriting Baseclass in the below class
 class TestOne(Baseclass):
+    def branchchanges(self):
+        print("branch changes in test_e2e")
+        
     def test_e2e(self):
 
         log = self.getlogger()
