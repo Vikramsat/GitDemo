@@ -12,6 +12,8 @@ from selenium.webdriver.support.wait import WebDriverWait
 class TestHomePage(Baseclass):
 
     def test_formSubmission(self, getData):
+        print("Hi I am added by GitDemo1")
+        print("Hi I am added by GitDemo2")
         log = self.getlogger()
         homepage = HomePage(self.driver)
 
